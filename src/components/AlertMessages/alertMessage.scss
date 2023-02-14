@@ -1,0 +1,10 @@
+@import '../../assets/css/constants.scss';
+.toast.danger {
+  .toast-header {
+    background-color: $toast-header-bg-color;
+  }
+  .toast-body {
+    background-color: $toast-body-bg-color;
+    color: $toast-font-color;
+  }
+}

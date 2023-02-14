@@ -1,0 +1,11 @@
+@import '../../assets/css/constants.scss';
+@import '../../assets/css/templates.scss';
+
+.pagination {
+  justify-content: center;
+  margin: 12px 0;
+  .page-number {
+    @extend %tpl-border-style;
+    color: $body-font-color;
+  }
+}

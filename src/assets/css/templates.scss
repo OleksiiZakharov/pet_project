@@ -1,0 +1,31 @@
+@import './constants.scss';
+
+%tpl-border-style {
+  cursor: pointer;
+  padding: 5px 15px;
+  margin: 5px;
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    135deg,
+    $tpl-border-style-gradient-begin 0%,
+    $tpl-border-style-gradient-middle 35%,
+    $tpl-border-style-gradient-middle 65%,
+    $tpl-border-style-gradient-begin 100%
+  );
+
+  &:hover {
+    box-shadow: $box-shadow;
+  }
+
+  &.active {
+    box-shadow: $box-shadow;
+    border-image-source: linear-gradient(
+      135deg,
+      $tpl-border-style-gradient-active-begin 0%,
+      $tpl-border-style-gradient-active-middle 35%,
+      $tpl-border-style-gradient-active-middle 65%,
+      $tpl-border-style-gradient-active-begin 100%
+    );
+  }
+}

@@ -1,0 +1,13 @@
+@import '../../assets/css/constants.scss';
+
+#basic-navbar-nav {
+  a {
+    > div {
+      margin: 8px 15px;
+      color: $navigation-font;
+      &.active {
+        color: $body-font-color;
+      }
+    }
+  }
+}

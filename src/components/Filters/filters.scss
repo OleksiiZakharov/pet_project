@@ -1,0 +1,14 @@
+@import '../../assets/css/templates.scss';
+
+.categoryBlock {
+  .title {
+    font-size: 1.5rem;
+    padding-left: 20px;
+  }
+}
+
+.filterBlock {
+  @extend %tpl-border-style;
+  width: unset;
+  text-align: center;
+}

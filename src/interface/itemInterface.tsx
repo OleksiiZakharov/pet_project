@@ -1,0 +1,37 @@
+export interface IItem {
+  id: number;
+  code: string;
+  type: string;
+  name: string;
+  icon: number;
+  iconX: number;
+  iconY: number;
+  iconSprite: string;
+  grade: number;
+  race: number;
+  level: number;
+  ptType: number;
+  ptVal: number;
+  defence: number;
+  abilityIndex1: number;
+  abilityIndex2: number;
+  abilityIndex3: number;
+  abilityIndex4: number;
+  abilityVal1: number;
+  abilityVal2: number;
+  abilityVal3: number;
+  abilityVal4: number;
+  gamin: number;
+  gamax: number;
+  mamin: number;
+  mamax: number;
+  fire: number;
+  water: number;
+  earth: number;
+  wind: number;
+  upgrade: string;
+  price: number;
+  addDate: Date;
+  owner: number;
+  status: number;
+}

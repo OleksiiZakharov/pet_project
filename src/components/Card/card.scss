@@ -1,0 +1,109 @@
+@import '../../assets/css/constants.scss';
+
+.item-card {
+  display: block;
+  border: 2px solid;
+  border-image-slice: 1;
+  padding: 5px;
+  margin: 10px 5px;
+  .item-header {
+    min-height: 64px;
+    max-height: 64px;
+  }
+
+  .item-icon {
+    width: 64px;
+    min-height: 48px;
+  }
+
+  &.grade-0 {
+    border-image-source: linear-gradient(
+      135deg,
+      $item-grade-0 0%,
+      rgba(133, 131, 1, 0) 35%,
+      rgba(133, 131, 1, 0) 65%,
+      $item-grade-0 100%
+    );
+  }
+  &.grade-1 {
+    border-image-source: linear-gradient(
+      135deg,
+      $item-grade-1 0%,
+      rgba(133, 131, 1, 0) 35%,
+      rgba(133, 131, 1, 0) 65%,
+      $item-grade-1 100%
+    );
+  }
+  &.grade-2 {
+    border-image-source: linear-gradient(
+      135deg,
+      $item-grade-2 0%,
+      rgba(133, 131, 1, 0) 35%,
+      rgba(133, 131, 1, 0) 65%,
+      $item-grade-2 100%
+    );
+  }
+  &.grade-3 {
+    border-image-source: linear-gradient(
+      135deg,
+      $item-grade-3 0%,
+      rgba(133, 131, 1, 0) 35%,
+      rgba(133, 131, 1, 0) 65%,
+      $item-grade-3 100%
+    );
+  }
+  &.grade-4 {
+    border-image-source: linear-gradient(
+      135deg,
+      $item-grade-4 0%,
+      rgba(133, 131, 1, 0) 35%,
+      rgba(133, 131, 1, 0) 65%,
+      $item-grade-4 100%
+    );
+  }
+  &.grade-5 {
+    border-image-source: linear-gradient(
+      135deg,
+      $item-grade-5 0%,
+      rgba(133, 131, 1, 0) 35%,
+      rgba(133, 131, 1, 0) 65%,
+      $item-grade-5 100%
+    );
+  }
+  &.grade-6 {
+    border-image-source: linear-gradient(
+      135deg,
+      $item-grade-6 0%,
+      rgba(133, 131, 1, 0) 35%,
+      rgba(133, 131, 1, 0) 65%,
+      $item-grade-6 100%
+    );
+  }
+  &.grade-7 {
+    border-image-source: linear-gradient(
+      135deg,
+      $item-grade-7 0%,
+      rgba(133, 131, 1, 0) 35%,
+      rgba(133, 131, 1, 0) 65%,
+      $item-grade-7 100%
+    );
+  }
+  &.grade-8 {
+    border-image-source: linear-gradient(
+      135deg,
+      $item-grade-8 0%,
+      rgba(133, 131, 1, 0) 35%,
+      rgba(133, 131, 1, 0) 65%,
+      $item-grade-8 100%
+    );
+  }
+  &.grade-9 {
+    border-image-source: linear-gradient(
+      135deg,
+      $item-grade-9 0%,
+      rgba(133, 131, 1, 0) 35%,
+      rgba(133, 131, 1, 0) 65%,
+      $item-grade-9 100%
+    );
+  }
+}
