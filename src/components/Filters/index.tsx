@@ -1,5 +1,6 @@
 import { Spinner } from 'react-bootstrap';
 import { useFilters } from '../../hooks/useFilters';
+import Badge from '../../ui/Badge';
 import './filters.scss';
 
 export const Filters = () => {
@@ -34,15 +35,13 @@ export const Filters = () => {
                 {filters
                   .filter((filter) => filter.categoryName === category)
                   .map((filter) => (
-                    <div
+                    <Badge
                       key={`${category}_${filter.id}`}
-                      className={`flex-fill filterBlock ${
-                        filter.state ? 'active' : null
-                      }`}
-                      onClick={() => filterClickHandler(filter.id)}
-                    >
-                      {filter.filterName}
-                    </div>
+                      id={filter.id}
+                      text={filter.filterName}
+                      state={filter.state}
+                      onClickHandler={filterClickHandler}
+                    />
                   ))}
               </div>
             </div>

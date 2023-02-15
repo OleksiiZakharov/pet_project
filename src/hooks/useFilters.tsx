@@ -1,3 +1,4 @@
+import { useCallback } from 'react';
 import { useQuery } from 'react-query';
 import { useDispatch, useSelector } from 'react-redux';
 import { FiltersService } from '../service/filters.service';
@@ -18,13 +19,16 @@ export const useFilters = () => {
       },
     }
   );
-  const filterClickHandler = (id: number): void => {
-    if (id <= 0) {
-      return;
-    }
+  const filterClickHandler = useCallback(
+    (id: number): void => {
+      if (id <= 0) {
+        return;
+      }
 
-    dispatch(filtersUpdate(id));
-  };
+      dispatch(filtersUpdate(id));
+    },
+    [dispatch]
+  );
 
   return {
     categories,
