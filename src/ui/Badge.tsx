@@ -8,7 +8,6 @@ interface IProps {
 }
 
 const Badge = ({ id, state, text, onClickHandler }: IProps) => {
-  console.log('Badge');
   return (
     <div
       className={`flex-fill filterBlock ${state ? 'active' : null}`}
