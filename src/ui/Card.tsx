@@ -1,18 +1,17 @@
-import React from 'react';
-import { IItem } from '../../interface/itemInterface';
+import { IItem } from '../interface/itemInterface';
 import {
+  getClassType,
   getImagetype,
   getRaceType,
   itemsAbilitiesNames,
-} from '../../utils/card.utils';
-import './card.scss';
-import { getClassType } from './../../utils/card.utils';
+} from '../utils/card.utils';
+import './css/card.scss';
 
 interface IProps {
   item: IItem;
 }
 
-const Card = ({ item }: IProps) => {
+export const Card = ({ item }: IProps) => {
   const {
     name,
     grade,
@@ -72,7 +71,7 @@ const Card = ({ item }: IProps) => {
             <div className="d-flex justify-content-between">
               <span>Damage:</span>
               <span>
-                {ptType != 3 ? `${gamin} - ${gamax}` : `${mamin} - ${mamax}`}
+                {ptType !== 3 ? `${gamin} - ${gamax}` : `${mamin} - ${mamax}`}
               </span>
             </div>
           ) : null}
@@ -150,5 +149,3 @@ const Card = ({ item }: IProps) => {
     </div>
   );
 };
-
-export default React.memo(Card);
