@@ -15,8 +15,7 @@ const queryClient = new QueryClient({
   },
 });
 
-axios.defaults.baseURL = 'http://pvp/';
-// axios.defaults.withCredentials = true;
+axios.defaults.baseURL = 'https://marketplaceback.cerberus.pp.ua/';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
