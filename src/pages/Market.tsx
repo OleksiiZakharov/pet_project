@@ -5,10 +5,10 @@ import { Items } from '../components/Items';
 export const Market = () => {
   return (
     <Row>
-      <Col xxl={2} xl={3} md={3}>
+      <Col md={4} lg={3} xxl={2}>
         <Filters />
       </Col>
-      <Col xxl={10} xl={9} md={9}>
+      <Col md={8} lg={9} xxl={10}>
         <Items />
       </Col>
     </Row>

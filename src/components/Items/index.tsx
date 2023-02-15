@@ -38,7 +38,7 @@ export const Items = () => {
         {items && total > 0 ? (
           items.map((item: IItem, index: number) => {
             return (
-              <Col key={`item_${index}`} md={4}>
+              <Col key={`item_${index}`} lg={6} xxl={4}>
                 <Card item={item} />
               </Col>
             );

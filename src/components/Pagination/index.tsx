@@ -26,15 +26,15 @@ const Pagination = ({ page, total, pageChangeHandler }: IProps) => {
       <ReactPaginate
         onPageChange={paginate}
         pageCount={pageCount}
-        previousLabel={'Prev'}
-        nextLabel={'Next'}
+        previousLabel={'<'}
+        nextLabel={'>'}
         containerClassName={'pagination'}
         pageLinkClassName={'page-number'}
         previousLinkClassName={'page-number'}
         nextLinkClassName={'page-number'}
         activeLinkClassName={'active'}
         marginPagesDisplayed={1}
-        pageRangeDisplayed={3}
+        pageRangeDisplayed={1}
         forcePage={page - 1}
       />
     </div>
